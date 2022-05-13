@@ -4,7 +4,6 @@
     <TargetFramework>net6.0</TargetFramework>
     <BaseOutputPath>bin\</BaseOutputPath>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <DocumentationFile>C:\Users\atakan\source\repos\AycanKaya\Campin-server\OnionArchitecture\WebApi\OnionArchitecture.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

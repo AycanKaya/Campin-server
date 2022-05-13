@@ -786,19 +786,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\atakan\\.nuget\\packages\\": {}
+    "C:\\Users\\Aycan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\atakan\\Source\\Repos\\AycanKaya\\Campin-server\\OnionArchitecture\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\atakan\\Source\\Repos\\AycanKaya\\Campin-server\\OnionArchitecture\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\atakan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\atakan\\Source\\Repos\\AycanKaya\\Campin-server\\OnionArchitecture\\Application\\obj\\",
+      "projectPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\Aycan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\atakan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aycan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -812,8 +812,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\atakan\\Source\\Repos\\AycanKaya\\Campin-server\\OnionArchitecture\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\atakan\\Source\\Repos\\AycanKaya\\Campin-server\\OnionArchitecture\\Domain\\Domain.csproj"
+            "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Domain\\Domain.csproj"
             }
           }
         }
@@ -860,7 +860,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   },
