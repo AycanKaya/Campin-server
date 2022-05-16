@@ -40,7 +40,7 @@ namespace Application.Features.ProductFeatures.Commands
                     customer.Name = command.Name;
                     customer.Email = command.Email;
                     customer.Address = command.Address;
-                    await _context.SaveChangesAsync();
+                    await _context.SaveChanges();
                     return customer.Id;
                 }
             }

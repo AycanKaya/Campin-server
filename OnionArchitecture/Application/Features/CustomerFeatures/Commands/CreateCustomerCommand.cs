@@ -39,7 +39,7 @@ namespace Application.Features.CustomerFeatures.Commands
                 customer.Password = request.Password;
                 customer.Phone = request.Phone;
                 _context.Customers.Add(customer);
-                await _context.SaveChangesAsync();
+                await _context.SaveChanges();
                 return customer.Id;
 
 

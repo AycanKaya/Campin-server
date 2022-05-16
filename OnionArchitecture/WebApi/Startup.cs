@@ -29,7 +29,8 @@ namespace WebApi
         {
             services.AddApplication();
             services.AddControllers();
-            
+            services.AddPersistence(Configuration);
+
             #region Swagger
             services.AddSwaggerGen(c =>
             {

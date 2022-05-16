@@ -25,7 +25,7 @@ namespace Application.Features.ProductFeatures.Commands
                 var customer = await _context.Customers.Where(a => a.Id == command.Id).FirstOrDefaultAsync();
                 if (customer == null) return default;
                 _context.Customers.Remove(customer);
-                await _context.SaveChangesAsync();
+                await _context.SaveChanges();
                 return customer.Id;
             }
         }
