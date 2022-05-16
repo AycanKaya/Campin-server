@@ -4,14 +4,106 @@
     "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Persistance\\Persistance.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Persistance\\Persistance.csproj": {
+    "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Persistance\\Persistance.csproj",
-        "projectName": "Persistance",
-        "projectPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Persistance\\Persistance.csproj",
+        "projectUniqueName": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Aycan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Persistance\\obj\\",
+        "outputPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Aycan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Aycan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aycan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +131,74 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Persistance\\Persistance.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Persistance\\Persistance.csproj",
+        "projectName": "Persistance",
+        "projectPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Persistance\\Persistance.csproj",
+        "packagesPath": "C:\\Users\\Aycan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Persistance\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Aycan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Aycan\\Desktop\\Campin\\Campin-server\\OnionArchitecture\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -13,5 +13,6 @@ namespace Application.Interfaces
     {
         DbSet<Customer> Customers { get; set; }
         Task<int> SaveChanges();
+        Task<int> SaveChangesAsync();
     }
 }
