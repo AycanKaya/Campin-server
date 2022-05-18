@@ -20,6 +20,12 @@ namespace Application.Context
         {
             return await base.SaveChangesAsync();
         }
-        
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Customer>().HasKey(c => c.Id);
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
