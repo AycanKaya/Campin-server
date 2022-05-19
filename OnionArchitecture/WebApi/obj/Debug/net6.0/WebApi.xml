@@ -74,5 +74,40 @@
             <param name="command"></param>
             <returns></returns>
         </member>
+        <member name="M:VacationSpotController.Create(Application.Features.VacationSpotFeatures.Commands.CreateVacationSpotCommand)">
+            <summary>
+            Creates a New Product.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VacationSpotController.GetAll">
+            <summary>
+            Gets all Products.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VacationSpotController.GetById(System.Int32)">
+            <summary>
+            Gets Product Entity by Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VacationSpotController.Delete(System.Int32)">
+            <summary>
+            Deletes Product Entity based on Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VacationSpotController.Update(System.Int32,Application.Features.VacationSpotFeatures.Commands.UpdateVacationSpotCommand)">
+            <summary>
+            Updates the Product Entity based on Id.   
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
