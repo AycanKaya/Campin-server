@@ -105,3 +105,4 @@ C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\WebApi\bin\Debug\n
 C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\WebApi\bin\Debug\net6.0\Persistance.dll
 C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\WebApi\bin\Debug\net6.0\Persistance.pdb
+C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
