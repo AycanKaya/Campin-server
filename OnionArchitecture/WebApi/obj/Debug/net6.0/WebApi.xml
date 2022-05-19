@@ -39,5 +39,40 @@
             <param name="command"></param>
             <returns></returns>
         </member>
+        <member name="M:OwnerController.Create(Application.Features.OwnerFeatures.Commands.CreateOwnerCommand)">
+            <summary>
+            Creates a New Product.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OwnerController.GetAll">
+            <summary>
+            Gets all Products.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OwnerController.GetById(System.Int32)">
+            <summary>
+            Gets Product Entity by Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OwnerController.Delete(System.Int32)">
+            <summary>
+            Deletes Product Entity based on Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OwnerController.Update(System.Int32,Application.Features.OwnerFeatures.Commands.UpdateOwnerCommand)">
+            <summary>
+            Updates the Product Entity based on Id.   
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
