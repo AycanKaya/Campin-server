@@ -35,7 +35,7 @@ public class VacationSpotController : BaseApiController
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
-        return Ok(await Mediator.Send(new GetVacationSpotQuery { Id = id }));
+        return Ok(await Mediator.Send(new GetVacationSpotQuery {  Id = id }));
     }
     /// <summary>
     /// Deletes Product Entity based on Id.
