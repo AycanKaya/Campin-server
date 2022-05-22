@@ -39,6 +39,41 @@
             <param name="command"></param>
             <returns></returns>
         </member>
+        <member name="M:CardController.Create(Application.Features.CardFeatures.Command.CreateCardCommand)">
+            <summary>
+            Creates a New Product.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CardController.GetAll">
+            <summary>
+            Gets all Products.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CardController.GetByCardNo(System.String)">
+            <summary>
+            Gets Product Entity by Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CardController.Delete(System.String)">
+            <summary>
+            Deletes Product Entity based on Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CardController.Update(System.String,Application.Features.CardFeatures.Command.UpdateCardCommand)">
+            <summary>
+            Updates the Product Entity based on Id.   
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
         <member name="M:CustomerController.Create(Application.Features.CustomerFeatures.Commands.CreateCustomerCommand)">
             <summary>
             Creates a New Product.
