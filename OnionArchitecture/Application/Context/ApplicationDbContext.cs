@@ -22,7 +22,7 @@ namespace Application.Context
         public DbSet<Card> Cards { get; set; }
         public DbSet<Campsite> Campsites { get; set; }
         public DbSet<Order> Orders { get; set; }
-
+        public  DbSet<Payment> Payments { get; set; }
         public async Task<int> SaveChanges()
         {
            
@@ -76,6 +76,11 @@ namespace Application.Context
                 entity.HasKey(c => c.Id);
                 entity.ToTable(name: "Order");
 
+            });
+            modelBuilder.Entity<Payment>(entity =>
+            {
+                entity.HasKey(c => c.Id);
+                entity.ToTable(name: "Payment");
             });
         }
     }

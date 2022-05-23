@@ -18,6 +18,7 @@ namespace Application.Interfaces
         DbSet<Card> Cards { get; set; }
         DbSet<Campsite> Campsites { get; set; }
         DbSet<Order> Orders { get; set; }
+        DbSet<Payment> Payments { get; set; }
 
         Task<int> SaveChanges();
        
