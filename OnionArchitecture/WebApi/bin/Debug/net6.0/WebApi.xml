@@ -4,6 +4,41 @@
         <name>WebApi</name>
     </assembly>
     <members>
+        <member name="M:BillController.Create(Application.Features.BillFeatures.Commands.CreateBillCommand)">
+            <summary>
+            Creates a New Product.
+            </summary>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BillController.GetAll">
+            <summary>
+            Gets all Products.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BillController.GetById(System.Int32)">
+            <summary>
+            Gets Product Entity by Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BillController.Delete(System.Int32)">
+            <summary>
+            Deletes Product Entity based on Id.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BillController.Update(System.Int32,Application.Features.BillFeatures.Commands.UpdateBillCommand)">
+            <summary>
+            Updates the Product Entity based on Id.   
+            </summary>
+            <param name="id"></param>
+            <param name="command"></param>
+            <returns></returns>
+        </member>
         <member name="M:CampsiteController.Create(Application.Features.CampsiteFeatures.Commands.CreateCampsiteCommand)">
             <summary>
             Creates a New Product.
