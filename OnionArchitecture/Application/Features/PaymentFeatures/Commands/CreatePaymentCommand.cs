@@ -28,7 +28,7 @@ namespace Application.Features.PaymentFeatures.Commands
                 payment.OrderId = command.OrderId;
                 payment.TotalPrice = command.TotalPrice;
                 _context.Payments.Add(payment);
-                await _context.SaveChanges();
+                //await _context.SaveChanges();
                 return command.OrderId;
 
 

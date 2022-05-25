@@ -37,7 +37,7 @@ namespace Application.Features.OrderFeatures.Commands
                 order.PlaceId = command.PlaceId;
                 order.isPaid= command.isPaid;
                 
-                _context.Orders.AddAsync(order);
+                _context.Orders.Add(order);
                 await _context.SaveChanges();
                 return order.Id;
 

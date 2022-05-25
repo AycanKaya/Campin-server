@@ -4,6 +4,7 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup>
-    <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
+    <ActiveDebugProfile>WebApi</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\WebApi\Properties\PublishProfiles\CampinWebApi - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
