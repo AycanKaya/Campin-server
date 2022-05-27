@@ -8,10 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Application.Interfaces;
+using WebApi.Services;
 
 namespace WebApi
 {
@@ -30,6 +28,7 @@ namespace WebApi
             services.AddApplication();
             services.AddControllers();
             services.AddPersistence(Configuration);
+            
             #region API Versioning
             // Add API Versioning to the Project
             services.AddApiVersioning(config =>
@@ -54,6 +53,10 @@ namespace WebApi
                 });
             });
             #endregion
+         //   services.AddSwaggerExtension();
+       
+ 
+        //       services.AddScoped<IAuthenticatedUserService, AuthenticatedUserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -76,9 +79,8 @@ namespace WebApi
             }
 
             app.UseHttpsRedirection();
-
+            
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
