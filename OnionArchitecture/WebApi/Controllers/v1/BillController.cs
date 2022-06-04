@@ -45,7 +45,7 @@ public class BillController : BaseApiController
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
-        return Ok(await Mediator.Send(new DeleteBillCommand { Id = id  }));
+        return Ok(await Mediator.Send(new DeleteBillCommand { Id = id }));
     }
     /// <summary>
     /// Updates the Product Entity based on Id.   
