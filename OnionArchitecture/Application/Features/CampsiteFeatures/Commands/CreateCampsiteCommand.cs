@@ -7,13 +7,24 @@ using Application.Interfaces;
 using Domain.Entities;
 using MediatR;
 
+
 namespace Application.Features.CampsiteFeatures.Commands
 {
     public class CreateCampsiteCommand : IRequest<int>
     {
 
-        public int OwnerID { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public int HolidayDestinationID { get; set; }
+        public float Rate { get; set; }
+        public string lat { get; set; }
+        public string lng { get; set; }
+        public List<Comment> Comments { get; set; }
+        public List<Link> Links { get; set; }
+
+        public string OwnerID { get; set; }
         public int VacationSpotID { get; set; }
+
         public int AdultPrice { get; set; }
         public int ChildPrice { get; set; }
         public DateTime SeasonStartDate { get; set; }
@@ -30,6 +41,14 @@ namespace Application.Features.CampsiteFeatures.Commands
             public async Task<int> Handle(CreateCampsiteCommand request, CancellationToken cancellationToken)
             {
                 var campsite = new Campsite();
+                campsite.Comments = request.Comments;
+                campsite.Name = request.Name;
+                campsite.Description = request.Description;
+                campsite.HolidayDestinationID = request.HolidayDestinationID;
+                campsite.Rate= request.Rate;
+                campsite.lng = request.lng;
+                campsite.lat = request.lat;
+                campsite.Links = request.Links;
                 campsite.OwnerID = request.OwnerID;
                 campsite.VacationSpotID = request.VacationSpotID;
                 campsite.ChildPrice = request.ChildPrice;
@@ -38,7 +57,7 @@ namespace Application.Features.CampsiteFeatures.Commands
                 campsite.SeasonCloseDate = request.SeasonCloseDate;
                 _context.Campsites.Add(campsite);
                 await _context.SaveChanges();
-                return campsite.OwnerID;
+                return campsite.VacationSpotID;
 
 
             }

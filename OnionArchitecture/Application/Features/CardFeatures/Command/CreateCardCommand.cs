@@ -17,7 +17,7 @@ namespace Application.Features.CardFeatures.Command
         public string CardNo { get; set; }
         public DateTime ExprationDate { get; set; }
         public int CardType { get; set; }
-
+        public string UserId { get; set; }
 
         public class CreateCardHandler : IRequestHandler<CreateCardCommand , string>
         {
@@ -31,6 +31,7 @@ namespace Application.Features.CardFeatures.Command
                 var card = new Card();
                 card.CardNo = command.CardNo;   
                 card.CardType = command.CardType;
+                card.UserId= command.UserId;
                 card.ExprationDate = command.ExprationDate;
                 _context.Cards.Add(card);
                 await _context.SaveChanges();

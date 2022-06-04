@@ -13,7 +13,7 @@ namespace Application.Features.CardFeatures.Command
         public string CardNo { get; set; }
         public DateTime ExprationDate { get; set; }
         public int CardType { get; set; }
-        
+        public string UserId { get; set; }
         public class UpdateCardHandler : IRequestHandler<UpdateCardCommand, string>
         {
             private readonly IApplicationDbContext _context;
@@ -31,6 +31,7 @@ namespace Application.Features.CardFeatures.Command
                 {
                     card.ExprationDate = command.ExprationDate;
                     card.CardType = command.CardType;
+                    card.UserId= command.UserId;
                     await _context.SaveChanges();
                     return card.CardNo;
 

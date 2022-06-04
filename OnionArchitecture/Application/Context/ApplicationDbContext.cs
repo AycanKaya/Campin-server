@@ -5,49 +5,43 @@ using System.Text;
 using System.Threading.Tasks;
 using Application.Interfaces;
 using Domain.Entities;
+using Infrastructure.Identity.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Application.Context
 {
-    public class ApplicationDbContext : IdentityDbContext, IApplicationDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>, IApplicationDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
       : base(options)
         {
         }
-        public DbSet<Customer> Customers { get; set; }
-        public DbSet<Owner> Owners { get; set; }
+      
         public DbSet<VacationSpot> Vacations { get; set; }
         public DbSet<Bill> Bills { get; set; }
         public DbSet<Card> Cards { get; set; }
         public DbSet<Campsite> Campsites { get; set; }
         public DbSet<Order> Orders { get; set; }
         public  DbSet<Payment> Payments { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<HolidayDestination> Holidays { get; set; }
+        public DbSet<Link> Links { get; set; }
         public async Task<int> SaveChanges()
         {
            
             return await base.SaveChangesAsync();
         }
-     
-       
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //   modelBuilder.Entity<Customer>().HasKey(c => c.Id);
             //   base.OnModelCreating(modelBuilder);
 
             base.OnModelCreating(modelBuilder);
-           
-            modelBuilder.Entity<Customer>(entity =>
-            {
-                entity.HasKey(c => c.Id);
-                entity.ToTable(name: "Customer");
-            });
-            modelBuilder.Entity<Owner>(entity =>
-            {
-                entity.HasKey(c => c.Id);
-                entity.ToTable(name: "Owner");
-            });
+
+
             modelBuilder.Entity<VacationSpot>(entity =>
             {
                 entity.HasKey(c => c.Id);
@@ -82,6 +76,23 @@ namespace Application.Context
             {
                 entity.HasKey(c => c.Id);
                 entity.ToTable(name: "Payment");
+            });
+            modelBuilder.Entity<HolidayDestination>(entity =>
+            { 
+                entity.HasKey(c => c.Id);
+                entity.ToTable(name: "HolidayDestination");
+
+            });
+            modelBuilder.Entity<Comment>(entity =>
+            {
+                entity.HasKey(c=> c.Id);
+                entity.ToTable(name: "Comment");
+            });
+
+            modelBuilder.Entity<Link>(entity =>
+            {
+                entity.HasKey(c => c.Id);
+                entity.ToTable(name: "Link");
             });
         }
     }

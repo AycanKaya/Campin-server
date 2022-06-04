@@ -11,6 +11,7 @@ namespace Domain.Entities
         public string CardNo { get; set; }
         public DateTime ExprationDate { get; set; }
         public int CardType { get; set; }
+        public string UserId { get; set; } //foreign key 
 
     }
 }

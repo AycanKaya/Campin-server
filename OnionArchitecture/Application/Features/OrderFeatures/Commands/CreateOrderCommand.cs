@@ -12,7 +12,7 @@ namespace Application.Features.OrderFeatures.Commands
     public class CreateOrderCommand : IRequest<int>
     {
         public int Id { get; set; }
-        public int CustomerId { get; set; }
+        public string CustomerId { get; set; }
         public int PlaceId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }

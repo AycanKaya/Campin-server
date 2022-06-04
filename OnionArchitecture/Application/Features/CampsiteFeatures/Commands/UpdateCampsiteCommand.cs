@@ -11,7 +11,7 @@ namespace Application.Features.CampsiteFeatures.Commands
 {
     public class UpdateCampsiteCommand : IRequest<int>
     {
-        public int OwnerID { get; set; }
+        public string OwnerID { get; set; }
         public int VacationSpotID { get; set; }
         public int AdultPrice { get; set; }
         public int ChildPrice { get; set; }

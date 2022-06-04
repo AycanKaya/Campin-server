@@ -14,6 +14,7 @@ C:\Users\atakan\Source\Repos\AycanKaya\Campin-server\OnionArchitecture\Applicati
 C:\Users\atakan\Source\Repos\AycanKaya\Campin-server\OnionArchitecture\Application\obj\Debug\net6.0\Application.pdb
 C:\Users\atakan\Source\Repos\AycanKaya\Campin-server\OnionArchitecture\Application\obj\Debug\net6.0\ref\Application.dll
 C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\bin\Debug\net6.0\Application.deps.json
+C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\bin\Debug\net6.0\Application.runtimeconfig.json
 C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\bin\Debug\net6.0\Application.dll
 C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\bin\Debug\net6.0\Application.pdb
 C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\bin\Debug\net6.0\Domain.dll
@@ -27,6 +28,5 @@ C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\obj\De
 C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\obj\Debug\net6.0\Application.dll
 C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\obj\Debug\net6.0\refint\Application.dll
 C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\obj\Debug\net6.0\Application.pdb
-C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\obj\Debug\net6.0\ref\Application.dll
-C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\bin\Debug\net6.0\Application.runtimeconfig.json
 C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\obj\Debug\net6.0\Application.genruntimeconfig.cache
+C:\Users\Aycan\Desktop\Campin\Campin-server\OnionArchitecture\Application\obj\Debug\net6.0\ref\Application.dll
