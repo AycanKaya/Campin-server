@@ -38,8 +38,8 @@ namespace WebApi.Controllers
         [HttpPost("forgot-password")]
         public async Task<IActionResult> ForgotPassword(ForgotPasswordRequest model)
         {
-            await _accountService.ForgotPassword(model, Request.Headers["origin"]);
-            return Ok();
+            var resetToken = await _accountService.ForgotPassword(model, Request.Headers["origin"]);
+            return Ok(resetToken);
         }
         [HttpPost("reset-password")]
         public async Task<IActionResult> ResetPassword(ResetPasswordRequest model)

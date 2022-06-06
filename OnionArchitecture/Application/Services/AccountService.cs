@@ -216,12 +216,12 @@ namespace Application.Services
             };
         }
 
-        public async Task ForgotPassword(ForgotPasswordRequest model, string origin)
+        public async Task<Response<EmailRequest>> ForgotPassword(ForgotPasswordRequest model, string origin)
         {
             var account = await _userManager.FindByEmailAsync(model.Email);
 
             // always return ok response to prevent email enumeration
-            if (account == null) return;
+            if (account == null) return new Response<EmailRequest>($"User could not be found with this email {model.Email}"); 
 
             var code = await _userManager.GeneratePasswordResetTokenAsync(account);
             var route = "api/account/reset-password/";
@@ -232,7 +232,7 @@ namespace Application.Services
                 To = model.Email,
                 Subject = "Reset Password",
             };
-            //await _emailService.SendAsync(emailRequest);
+            return new Response<EmailRequest>(emailRequest);
         }
 
         public async Task<Response<string>> ResetPassword(ResetPasswordRequest model)
