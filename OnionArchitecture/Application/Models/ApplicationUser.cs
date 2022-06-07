@@ -16,5 +16,6 @@ namespace Infrastructure.Identity.Models
         {
             return this.RefreshTokens?.Find(x => x.Token == token) != null;
         }
+
     }
 }

@@ -6,7 +6,6 @@ using Application.DTOs.Account;
 using Application.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-
 namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
@@ -39,7 +38,7 @@ namespace WebApi.Controllers
         public async Task<IActionResult> ForgotPassword(ForgotPasswordRequest model)
         {
             var resetToken = await _accountService.ForgotPassword(model, Request.Headers["origin"]);
-            return Ok(resetToken);
+            return Ok(resetToken); 
         }
         [HttpPost("reset-password")]
         public async Task<IActionResult> ResetPassword(ResetPasswordRequest model)
@@ -54,5 +53,15 @@ namespace WebApi.Controllers
             else
                 return HttpContext.Connection.RemoteIpAddress==null ? "127.0.0.1":HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString();
         }
+        [HttpGet("GetUserById")]
+        public async Task<IActionResult> GetUserById([FromQuery]string userId)
+        {
+
+            return Ok(await _accountService.GetUserWithId(userId));
+
+
+        }
+
+
     }
 }

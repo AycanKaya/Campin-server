@@ -75,6 +75,17 @@ namespace Application.Services
             response.RefreshToken = refreshToken.Token;
             return new Response<AuthenticationResponse>(response, $"Authenticated {user.UserName}");
         }
+       
+        public async Task<Response<string>> GetUserWithId(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            if(user == null)
+            {
+                throw new ApiException($"This  user cannot be found !!! ");
+            }
+            return new Response<string>(user.UserName);
+
+        }
 
         public async Task<Response<string>> RegisterAsync(RegisterRequest request, string origin)
         {
